@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    ### General project setup
+    general:
+      productiveBranch: 'master'
+
+
     stages {
         stage('Build') {
             steps {
