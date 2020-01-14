@@ -15,6 +15,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing my app..'
+                sh "echo Hello from the shell"
+                sh "hostname"
+                sh "uptime"
             }
         }
         stage('Deploy') {
