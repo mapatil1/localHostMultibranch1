@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    ### General project setup
+  
     general:
       productiveBranch: 'master'
 
@@ -10,6 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building my app..'
+                
             }
         }
         stage('Test') {
