@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application..'
+                sh 'mvn --version'
             }
         }
         stage('Test') {
